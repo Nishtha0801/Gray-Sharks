@@ -1,0 +1,14 @@
+.box{
+    height: 200px;
+    background-color: pink;
+    padding: 40px 0px 40px 0px;
+    /* top right bottom left */
+    /* padding-left: ;
+    padding-top: ;
+    padding-bottom: ;
+    padding-right: ; */
+    border: 10px dashed black;
+    /* border-size, border-style, border-color */
+    margin: 100px;
+     /* top right bottom left */
+}
