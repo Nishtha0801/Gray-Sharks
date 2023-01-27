@@ -1,0 +1,15 @@
+/* img{
+    height: 300px;
+    width: 300px;
+    border: 10px solid black;
+    border-radius: 50%;
+ 
+} */
+.image-style{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/India.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(black, white); */
+}
