@@ -1,0 +1,32 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container{
+    height: 40%;
+    width: 20%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+img {
+    height: 70%;
+    width: 100%;
+    border-radius: 10%;
+}
+
+.desc-img{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
