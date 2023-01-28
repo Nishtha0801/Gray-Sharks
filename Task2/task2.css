@@ -1,0 +1,61 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(189, 222, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card{
+    height: 60%;
+    width: 25%;
+    background-color: white;
+}
+
+.image{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+img{
+    height: 90%;
+    width: 40%;
+    border: 5px solid rgba(152, 152, 152, 0.326);
+    border-radius: 50%;
+}
+.designation{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5%;
+}
+#name{
+    color: rgb(255, 149, 0);
+    font-size: 30px;
+}
+
+#developer{
+    font-size: 15px;
+}
+
+#aboutMe{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10%;
+    color: rgb(117, 116, 116);
+}
+.footer{
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.footer a{
+    
+    color: teal;
+}
