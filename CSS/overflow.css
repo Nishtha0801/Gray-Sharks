@@ -1,0 +1,17 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.para{
+    height: 230px;
+    width: 320px;
+    background-color: rgb(113, 28, 28);
+    color: white;
+    border: 2px solid black;
+    overflow: auto;
+}
