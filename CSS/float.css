@@ -1,0 +1,21 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+}
+
+.float{
+    height: 90%;
+    width: 90%;
+    padding: 30px;
+    background-color: rgb(110, 28, 28);
+    color: white;
+    float: left;
+}
+
+img {
+    height: 500px;
+    width: 500px;
+    float: left;
+    margin: 20px;
+}
