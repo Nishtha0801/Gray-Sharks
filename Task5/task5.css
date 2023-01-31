@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/task5.jpeg");
+    background-size: cover;
+    margin: 0px;
+}
+.header{
+    height: 20%;
+    width: 100%;
+    background-color: rgb(101,86,30);
+    color: rgb(172, 151, 92);
+    padding: 20px;
+}
+.header-1{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+.header-2{
+    font-size: 25px;
+    
+}
+.content{
+    height: 80%;
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.part-1{
+    height: 30%;
+    width: 60%;
+    background-color: rgb(194,173,120);
+}
+.part-2{
+    height: 100%;
+    width: 30%;
+    background-color: rgb(211,188,149);
+}
