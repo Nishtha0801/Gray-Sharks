@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+}
+.header{
+    height: 20%;
+    width: 100%;
+    background-color: rgba(165, 42, 42, 0.496);
+    /* color: white; */
+    padding: 40px;
+}
+/* p {
+    font-style: italic;
+} */
+
+.header p{
+    font-style: italic;
+}
+
+div > h1{  
+    color: burlywood; 
+}
+
+/* Adjacent Sibling selector */
+ /* h1 + p{  
+    color: palevioletred;
+} */
