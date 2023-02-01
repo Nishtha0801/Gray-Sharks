@@ -6,20 +6,42 @@
 .container{
     height: 100vh;
     width: 100vw;
-    background-color: bisque;
+    background-image: linear-gradient(to bottom right,bisque, brown);
 }
 .header{
     height: 20%;
     width: 100%;
-    background-color: rgba(165, 42, 42, 0.496);
+    /* background-color: rgba(165, 42, 42, 0.496); */
     /* color: white; */
     padding: 40px;
 }
+
+.box1{
+    height: 20%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 80%;
+    width: 80%;
+    background-color: yellow;
+    margin: 40px;
+    transition: width 3s;
+}
+
+.box:hover{
+    width: 40%;
+}
+
 /* p {
     font-style: italic;
 } */
 
-.header p{
+.header p:hover{
+    cursor: pointer;
     font-style: italic;
 }
 
