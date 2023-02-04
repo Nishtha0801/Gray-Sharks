@@ -9,6 +9,9 @@
     width: 100vw;
     background-color: rgb(241,166,162);
     padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .image-container{
     height: 90%;
