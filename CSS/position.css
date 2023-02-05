@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    height: 1500px;
+    width: 90vw;
+    background-color: yellowgreen;
+}
+
+.red, .green, .blue{
+    height: 200px;
+    width: 200px;
+}
+.red{
+    background-color: red;
+   
+}
+.blue{
+    background-color: blue;
+    position: sticky;
+    top: 50px;
+    left: 200px;
+    /* left: 200px; */
+    /* top: 50px; */
+    /* right: ;
+    bottom: ; */
+}
+.green{
+    background-color: green;
+}
