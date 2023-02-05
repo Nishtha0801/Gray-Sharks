@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    text-align: center;
+    animation: blink 2.5s normal infinite;
+}
+
+@keyframes blink {
+    0%, 100%{
+        background-color: yellow;
+        color: orangered;
+        font-size: 50px;
+    }
+    50% {
+        background-color: aquamarine;
+        color: blue;
+        font-size: 500px;
+    }
+}
+
+/* .content{
+    height: 30%;
+    width: 30%;
+    background-color: yellowgreen;
+    animation: spin 5s ease 2;
+
+} */
+
+
+
+/* @keyframes spin {
+    /* waypoints */
+    /* 0% { 
+        transform: rotateZ(0);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+} */ 
