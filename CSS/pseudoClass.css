@@ -1,0 +1,22 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: yellowgreen;
+    font-size: 20px;
+}
+
+a:link {
+    color: brown;
+}
+a:visited{
+    color: violet;
+}
+a:hover{
+    color: teal;
+}
+a:active{
+    color: orangered;
+}
+p:active{
+    background-color: violet;
+}
