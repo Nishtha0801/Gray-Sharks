@@ -1,0 +1,24 @@
+/* p::first-letter{
+    color: yellowgreen;
+    font-size: 40px;
+} */
+
+/* p::first-line{
+    color: yellowgreen;
+    font-size: 40px;
+} */
+
+p:nth-child(2){
+    color: teal;
+}
+
+.name::after{
+    content: " - Nishtha Goyal";
+    color: tomato;
+    font-style: italic;
+}
+
+.developer::before{
+    content: "Designation ";
+    font-weight: 900;
+}
