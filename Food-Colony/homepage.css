@@ -48,3 +48,87 @@ li{
     cursor: pointer;
 
 }
+
+.wrap{
+    position: absolute;
+    top: 35%;
+    left: 58%;
+}
+.wrap h1{
+    height: 120px;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 10px;
+    background: linear-gradient(
+        to right,
+        rgb(81, 61, 41) 10%,
+        rgb(255, 179, 37) 70%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+}
+.wrap h3{
+    font-weight: normal;
+    padding-left: 20%;
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 50px;
+}
+
+.wrap h3::before{
+    content: ' ';
+    display: block;
+    height: 2px;
+    width: 100px;
+    background: gray;
+    position: relative;
+    right: 110px;
+    top: 13px;
+}
+
+.wrap h3::after{
+    content: ' ';
+    display: block;
+    height: 2px;
+    width: 100px;
+    background: gray;
+    position: relative;
+    right: -240px;
+    top: -17px;
+}
+
+.btns{
+    display: flex;
+    padding-left: 30px;
+}
+
+.loginBtn{
+    height: 45px;
+    width: 120px;
+    background-color: orange;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: medium;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.registerBtn{
+    height: 45px;
+    width: 120px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: medium;
+    cursor: pointer;
+    color: orange;
+    border: 3px solid orange;
+    margin-right: 50px;
+}
