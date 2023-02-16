@@ -3,13 +3,13 @@ let nithin = 'amazing';
 // nithin => variableName
 // = -> assignment
 
-let countOne = 40;
+var countOne = 40;
 console.log(countOne);
 
-let countTwo = 80; //number 
+var countTwo = 80; //number 
 console.log(countTwo);
 
-let totalCount = countOne + countTwo;
+var totalCount = countOne + countTwo;
 console.log(totalCount)
 
 let a = 4;
@@ -26,5 +26,26 @@ let helloWorldEveryone = "Hello World, Everyone!";
 // let hello world = "Not possible";
 
 let myVariable;
-console.log(typeof myVariable); 
+console.log(typeof myVariable); // => undefined
+
+let myNullVariable = null;
+console.log(typeof myNullVariable); // => object
+
+// key:value
+
+let myObject = {
+    firstName : "Nishtha",
+    lastName : "Goyal",
+    age:"21",
+}
+
+// property  value  firstName   Nishtha
+
+console.log(myObject.firstName);
+
+const myConstantVariable = "Hey, I am a constant variable ki value";
+console.log(myConstantVariable);
+
+//  myConstantVariable = "Hey, I am changed";  => error
+// const cannot be updated, const cannot be redeclared.
 
