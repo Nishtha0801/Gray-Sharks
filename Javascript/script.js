@@ -93,8 +93,35 @@
 
 // let can be updated but it can't be redeclared
 
-let myName = "Nishtha";
-console.log(myName);
+// let myName = "Nishtha";
 
- myName = "Nishtha Goyal";
- console.log(myName);
+// console.log(myName);
+
+// myName = "Nishtha Goyal";
+// console.log(myName);
+
+
+// Operators:
+
+let a = 7;
+a+=5; // a = a+5
+console.log(a); // => 12
+
+a-=2; // a = a-2;
+console.log(a); // => 10
+
+a*=4;
+console.log(a); // => 40
+
+a/=4;
+console.log(a); // => 10
+
+a**=2;
+console.log(a); // => 100
+
+a%=3; 
+console.log(a); // => 1
+
+// x+y, x*y
+a++; // => 2
+a--; // => 1
