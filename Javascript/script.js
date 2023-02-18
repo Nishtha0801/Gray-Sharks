@@ -103,25 +103,59 @@
 
 // Operators:
 
-let a = 7;
-a+=5; // a = a+5
-console.log(a); // => 12
+// let a = 7;
+// a+=5; // a = a+5
+// console.log(a); // => 12
 
-a-=2; // a = a-2;
-console.log(a); // => 10
+// a-=2; // a = a-2;
+// console.log(a); // => 10
 
-a*=4;
-console.log(a); // => 40
+// a*=4;
+// console.log(a); // => 40
 
-a/=4;
-console.log(a); // => 10
+// a/=4;
+// console.log(a); // => 10
 
-a**=2;
-console.log(a); // => 100
+// a**=2;
+// console.log(a); // => 100
 
-a%=3; 
-console.log(a); // => 1
+// a%=3; 
+// console.log(a); // => 1
 
-// x+y, x*y
-a++; // => 2
-a--; // => 1
+// // x+y, x*y
+// a++; // => 2
+// a--; // => 1
+
+
+
+
+// var l = 3;
+// const m = 2; 
+// const l=3;
+// const m =2;
+
+// console.log(l == m); //Equalto, return a true if operands are equal
+
+// console.log(l != m); 3 != 2 => true
+
+// === , strict equalTo
+
+// console.log(l === m);
+
+// && -> Logical And
+
+const x=5, y=2;
+// console.log((x < 6) || (y > 4));  
+
+// !
+
+// console.log(!true);
+
+if(x>y){
+     console.log("x is greater");
+}
+
+else {
+    console.log("y is greater");
+}
+
