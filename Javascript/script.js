@@ -151,11 +151,56 @@ const x=5, y=2;
 
 // console.log(!true);
 
-if(x>y){
-     console.log("x is greater");
+// if(x>y){
+//      console.log("x is greater");
+// }
+
+// else {
+//     console.log("y is greater");
+// }
+
+
+//team 1
+let dol = {
+    s1 : 96,
+    s2 : 108,
+    s3 : 89,
 }
 
-else {
-    console.log("y is greater");
+//team 2
+let koa = {
+    s1 : 88,
+    s2 : 91,
+    s3 : 110,
 }
+
+// point 1
+let dAverage = (dol.s1 + dol.s2 + dol.s3)/3;
+let kAverage = (koa.s1 + koa.s2 + koa.s3)/3;
+
+// //point 2
+// if(dAverage > kAverage){
+//     console.log("D is the winner");
+// } else if(kAverage > dAverage){
+//     console.log("K is the winner");
+// } else {
+//     console.log("Draw");
+// }
+
+
+// point 3
+// D ko jeetana h
+if(dAverage > kAverage && dAverage >= 100){
+    console.log("D is the winner");
+} else if (kAverage > dAverage && kAverage >= 100){
+    console.log("K is the winner");
+} else {
+    // point 4
+   if(dAverage === kAverage && dAverage>=100 && kAverage>=100){
+    console.log("Draw");
+   } else {
+    console.log("No one wins the trophy");
+   }
+}
+
 
