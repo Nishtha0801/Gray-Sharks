@@ -293,5 +293,27 @@ let myName = `Hey, I am ${myFirstName}, ${myLastName}!`;
 console.log(myName);
 
 
+// Switch statement=======================================================
+
+const myNumber = 4;
+
+switch(myNumber){
+    case 1: 
+        console.log("The number is 1");
+        break;
+
+    case 4:
+        console.log("The number is 4");
+        break;
+
+    case 6:
+        console.log("The number is 6");
+        break;
+
+    default:
+        console.log("My number's case is not there");
+}
+// Assignment: Use switch on days
+
 
 
