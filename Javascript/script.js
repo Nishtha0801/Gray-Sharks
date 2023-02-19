@@ -257,11 +257,11 @@ if(number >= range.lowest && number <= range.highest){
 
 let numberTocheck = 10;
 
-if(numberTocheck % 2 === 0){
-    console.log("even number");
-} else {
-    console.log("odd numver");
-}
+// if(numberTocheck % 2 === 0){
+//     console.log("even number");
+// } else {
+//     console.log("odd numver");
+// }
 
 // Ternary Operator/ Conditional Operator
 
