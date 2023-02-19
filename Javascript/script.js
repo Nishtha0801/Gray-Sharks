@@ -225,37 +225,37 @@ const x=5, y=2;
 
 
 // Question 1========================================
-let a = 15;
-let b = 15, c = 11;   
+// let a = 15;
+// let b = 15, c = 11;   
 
-if(a > b && a > c){
-    console.log("a is greater");
-} else if(b > a && b > c){
-    console.log("b is greater");
-} else if(c > a && c > b){
-    console.log("c is greater");
-} else {
-    // homework!
-}
+// if(a > b && a > c){
+//     console.log("a is greater");
+// } else if(b > a && b > c){
+//     console.log("b is greater");
+// } else if(c > a && c > b){
+//     console.log("c is greater");
+// } else {
+//     // homework!
+// }
 
 // Question 2 ======================================
 
-let range = {
-    highest: 1000,
-    lowest: 900,   //900 - 1000
-}
+// let range = {
+//     highest: 1000,
+//     lowest: 900,   //900 - 1000
+// }
 
-let number = 910;
+// let number = 910;
 
-if(number >= range.lowest && number <= range.highest){
-    console.log("Number lying in range!");
-} else {
-    console.log("Not in range");
-}
+// if(number >= range.lowest && number <= range.highest){
+//     console.log("Number lying in range!");
+// } else {
+//     console.log("Not in range");
+// }
 
-// Question 3 ===========================================
+// // Question 3 ===========================================
 
-let numberTocheck = 10;
+// let numberTocheck = 10;
 
 // if(numberTocheck % 2 === 0){
 //     console.log("even number");
@@ -265,9 +265,33 @@ let numberTocheck = 10;
 
 // Ternary Operator/ Conditional Operator
 
-numberTocheck % 2 === 0 ? console.log("my number is even") : console.log("my number is odd");
-// condition ? "Do something, if your condition is satisfied" : otherwise, do this
+// numberTocheck % 2 === 0 ? console.log("my number is even") : console.log("my number is odd");
+// // condition ? "Do something, if your condition is satisfied" : otherwise, do this
 
-(number >= range.lowest) && (number <= range.highest) ? console.log("My number is in range") : console.log("My number is out of range");
+// (number >= range.lowest) && (number <= range.highest) ? console.log("My number is in range") : console.log("My number is out of range");
+
+
+// Template literal
+
+ let stringText = "Hello, My name is Nishtha";
+
+let myText = `Hello, I am "Nishtha"!`;
+
+let multiLineText = `heyy, 
+My, name is,
+Nishtha`;
+
+console.log(multiLineText);
+
+let myFirstName = "Nishtha";
+let myLastName = "Goyal";
+
+
+// String Interpolation -> important!
+let myName = `Hey, I am ${myFirstName}, ${myLastName}!`;
+
+console.log(myName);
+
+
 
 
