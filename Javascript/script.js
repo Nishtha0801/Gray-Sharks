@@ -263,6 +263,14 @@ const x=5, y=2;
 //     console.log("odd numver");
 // }
 
+// let numberTocheckTwo = 14;
+
+// if(numberTocheckTwo % 2 === 0){
+//     console.log("even number");
+// } else {
+//     console.log("odd numver");
+// }
+
 // Ternary Operator/ Conditional Operator
 
 // numberTocheck % 2 === 0 ? console.log("my number is even") : console.log("my number is odd");
