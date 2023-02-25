@@ -72,19 +72,46 @@ hello();
 
 // Arrow functions ===================== ES6
 
-let multi = function(x,y){   // function expression
-    return x*y;  
-}
+// let multi = function(x,y){   // function expression
+//     return x*y;  
+// }
 
-let helloArrow = () => console.log("Hello World");
-let multiArrow = (x,y) => x*y; // arrow functions
+// let helloArrow = () => console.log("Hello World");
+// let multiArrow = (x,y) => x*y; // arrow functions
 
-let oddEven = (num) => {
-    if(num % 2 === 0){
-        console.log("even number");
-    } else {
-        console.log("odd number");
-    }
+// let oddEven = (num) => {
+//     if(num % 2 === 0){
+//         console.log("even number");
+//     } else {
+//         console.log("odd number");
+//     }
+// };
+
+// oddEven(23);
+
+
+// point 1
+let calcAverage = (scoreOne, scoreTwo, scoreThree) => {
+    let average = (scoreOne + scoreTwo + scoreThree)/3;
+    return average;
 };
 
-oddEven(23);
+// point 2
+let dolphinAver = calcAverage(85,54,41);
+let koalaAver = calcAverage(23,34,27);
+
+console.log(dolphinAver);
+console.log(koalaAver);
+
+// point 3
+let checkWinner = (dolphinAver, koalaAver) => {
+    if(dolphinAver >= 2*koalaAver){
+        console.log("Dolphin is the winner")
+    } else if(koalaAver >= 2*dolphinAver){
+        console.log('koala is the winner');
+    } else {
+        console.log("Draw!")
+    }
+}
+
+checkWinner(dolphinAver,koalaAver);
