@@ -117,7 +117,52 @@ hello();
 // checkWinner(dolphinAver,koalaAver);
 
 
-let greet = (nameOfThePerson) => console.log(`Hello, ${nameOfThePerson}`);
+// let greet = (nameOfThePerson) => console.log(`Hello, ${nameOfThePerson}`);
+
+// arrow function
+let counterFunc = (counter) => {
+    if(counter > 100){
+        counter = 0;
+    } else {
+        counter ++;
+    }
+    return counter;
+}
+
+// function expression
+let counterFuncExpression = function (counter) {
+    if(counter > 100){
+        counter = 0;
+    } else {
+        counter ++;
+    }
+    return counter;
+}
+
+let isEven = (num) => (num%2 === 0);
+
+console.log(isEven(23));
+
+
+let greet = (firstName, lastName) => console.log(`Hello, ${firstName} ${lastName}`);
+
+greet("Nishtha", "Goyal");
+
+
+let kgTolbs = (kg) => {
+    let lbs = kg*2.2;
+
+    if(lbs > 150){
+        console.log("Obese");
+    } else if (lbs >= 100 && lbs <= 150){
+        console.log("Okay condition")
+    } else {
+        console.log("You are underweight");
+    }
+}
+
+kgTolbs(59);
+
 
 
 
