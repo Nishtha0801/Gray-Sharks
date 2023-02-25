@@ -90,28 +90,34 @@ hello();
 // oddEven(23);
 
 
-// point 1
-let calcAverage = (scoreOne, scoreTwo, scoreThree) => {
-    let average = (scoreOne + scoreTwo + scoreThree)/3;
-    return average;
-};
+// // point 1
+// let calcAverage = (scoreOne, scoreTwo, scoreThree) => {
+//     let average = (scoreOne + scoreTwo + scoreThree)/3;
+//     return average;
+// };
 
-// point 2
-let dolphinAver = calcAverage(85,54,41);
-let koalaAver = calcAverage(23,34,27);
+// // point 2
+// let dolphinAver = calcAverage(85,54,41);
+// let koalaAver = calcAverage(23,34,27);
 
-console.log(dolphinAver);
-console.log(koalaAver);
+// console.log(dolphinAver);
+// console.log(koalaAver);
 
-// point 3
-let checkWinner = (dolphinAver, koalaAver) => {
-    if(dolphinAver >= 2*koalaAver){
-        console.log("Dolphin is the winner")
-    } else if(koalaAver >= 2*dolphinAver){
-        console.log('koala is the winner');
-    } else {
-        console.log("Draw!")
-    }
-}
+// // point 3
+// let checkWinner = (dolphinAver, koalaAver) => {
+//     if(dolphinAver >= 2*koalaAver){
+//         console.log("Dolphin is the winner")
+//     } else if(koalaAver >= 2*dolphinAver){
+//         console.log('koala is the winner');
+//     } else {
+//         console.log("Draw!")
+//     }
+// }
 
-checkWinner(dolphinAver,koalaAver);
+// checkWinner(dolphinAver,koalaAver);
+
+
+let greet = (nameOfThePerson) => console.log(`Hello, ${nameOfThePerson}`);
+
+
+
