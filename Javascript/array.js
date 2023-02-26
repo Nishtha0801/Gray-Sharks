@@ -35,11 +35,29 @@
 // console.log(myArray[7]);
 // console.log(myArray[11]);
 
-let words = ['hello', 'I', 'am'];
+// let words = ['hello', 'I', 'am'];
 
-words.push('Nishtha'); // it got added at the last.
+// words.push('Nishtha'); // it got added at the last.
 
-console.log(words);
+// console.log(words);
 
-words.unshift('Good Morning'); // got added at the front.
-console.log(words);
+// words.unshift('Good Morning'); // got added at the front.
+// console.log(words);
+
+// words[0] = 'hi';
+// console.log(words);
+
+let data = ["hi",1,3,4,7,9,"hello"];
+// let remove = data.pop(); // it will basically remove the data from last
+// console.log(remove);
+// console.log(data);
+
+// let remove = data.shift(); // it will remove the first element
+// console.log(remove);
+// console.log(data); 
+console.log(data.length);
+
+
+
+
+
