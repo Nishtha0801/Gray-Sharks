@@ -17,19 +17,29 @@
 
 // const data = [
 //     {'myName' : 'Nishtha'},
-//     [1,2,3,4],
-//     function helloWorld(){
-//         console.log("hello world");
+//     [1,2,3,4], 
+//     function helloWorld(word){
+//         console.log("hello world" + word);
+//         return 2;
 //     } 
 // ];
 
 // console.log(data);
+// console.log(data[2]("Nishtha"));
 
-            //   0 1 2 ..........
-const myArray = [1,2,3,4,5,6,'hello', 'I', 'am', 'Nishtha', true];
+           //   0 1 2 ..........
+// const myArray = [1,2,3,4,5,6,'hello', 'I', 'am', 'Nishtha', true];
 
-console.log(myArray[0]);
-console.log(myArray[10]);
-console.log(myArray[7]);
-console.log(myArray[11]);
+// console.log(myArray[0]);
+// console.log(myArray[10]);
+// console.log(myArray[7]);
+// console.log(myArray[11]);
 
+let words = ['hello', 'I', 'am'];
+
+words.push('Nishtha'); // it got added at the last.
+
+console.log(words);
+
+words.unshift('Good Morning'); // got added at the front.
+console.log(words);
