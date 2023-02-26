@@ -47,17 +47,28 @@
 // words[0] = 'hi';
 // console.log(words);
 
-let data = ["hi",1,3,4,7,9,"hello"];
+// let data = ["hi",1,3,4,7,9,"hello"];
 // let remove = data.pop(); // it will basically remove the data from last
-// console.log(remove);
-// console.log(data);
+// // console.log(remove);
+// // console.log(data);
 
-// let remove = data.shift(); // it will remove the first element
-// console.log(remove);
-// console.log(data); 
-console.log(data.length);
+// // let remove = data.shift(); // it will remove the first element
+// // console.log(remove);
+// // console.log(data); 
+// console.log(data.length);
 
+// const arrayOne = [1,2,3,4];
+// const arrayTwo = [5,6,7,8];
+// const arrayThree = [9,10,11];
 
+// let concatenatedArray = arrayOne.concat(arrayTwo,arrayThree);
+
+// console.log(concatenatedArray);
+
+let billValue = 275;
+let tip = 50 <= billValue <= 300 ? billValue*(15/100) : billValue*(20/100);
+console.log(billValue, tip);
+console.log(`The bill was ${billValue}, the tip was ${tip}, and the total value was ${billValue + tip}`);
 
 
 
