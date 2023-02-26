@@ -65,10 +65,25 @@
 
 // console.log(concatenatedArray);
 
-let billValue = 275;
-let tip = 50 <= billValue <= 300 ? billValue*(15/100) : billValue*(20/100);
-console.log(billValue, tip);
-console.log(`The bill was ${billValue}, the tip was ${tip}, and the total value was ${billValue + tip}`);
+// let billValue = 275;
+// let tip = 50 <= billValue <= 300 ? billValue*(15/100) : billValue*(20/100);
+// console.log(billValue, tip);
+// console.log(`The bill was ${billValue}, the tip was ${tip}, and the total value was ${billValue + tip}`);
 
 
 
+
+let bills = [125, 555, 44];
+let tips = [];
+let total = [];
+
+let calcTip = (billValue, tips) => {
+    let tip = 50 <= billValue <= 300 ? billValue*(15/100) : billValue*(20/100);
+    tips.push(tip);
+    total.push(billValue+tip);
+    return tips;
+}
+calcTip(125, tips);
+calcTip(555, tips);
+console.log(tips);
+console.log(total);
