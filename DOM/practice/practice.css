@@ -56,5 +56,10 @@
     height: 100%;
     width: 30%;
     background-color: teal;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
