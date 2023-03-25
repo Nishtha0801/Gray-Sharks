@@ -20,3 +20,22 @@ console.log(tasklist);
 task2btn.addEventListener("click", () => {
     tasklist[2].innerHTML = `Item changed`;
 });
+
+
+let list = [];
+
+let taskInput = document.getElementById("task-input");
+console.log(taskInput);
+
+let add = document.getElementById("addTask");
+console.log(add);
+
+add.addEventListener("click", () => {
+    console.log("button clicked");
+    list.push({
+        text: taskInput.value,
+    })
+    console.log(list);
+});
+
+console.log(list);
