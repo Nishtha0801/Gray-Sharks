@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: beige;
+}
+.task1{
+    height: 20%;
+    width: 100%;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+   
+}
+#clickMe{
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    background-color: tomato;
+ 
+}
