@@ -11,3 +11,12 @@ btn.addEventListener("click", () => {
     paragraph1.innerHTML = `${initialValue} Goyal!`;
     btn.innerText = `Clicked!`;
 });
+
+let task2btn = document.getElementById("task2btn");
+
+let tasklist = document.getElementsByClassName("item");
+console.log(tasklist);
+
+task2btn.addEventListener("click", () => {
+    tasklist[2].innerHTML = `Item changed`;
+});

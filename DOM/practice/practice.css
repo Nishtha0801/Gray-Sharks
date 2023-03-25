@@ -27,3 +27,14 @@
     background-color: tomato;
  
 }
+
+.task2{
+    height: 20%;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
