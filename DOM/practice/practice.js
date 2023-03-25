@@ -34,9 +34,13 @@ add.addEventListener("click", () => {
     console.log("button clicked");
     list.push({
         text: taskInput.value,
-    })
+    });
     taskInput.value = "";
     console.log(list);
+    for(let i=0; i<list.length; i++){
+        console.log(list[i].text);
+    }
 });
 
 console.log(list);
+
