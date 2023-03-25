@@ -29,20 +29,23 @@ console.log(taskInput);
 
 let add = document.getElementById("addTask");
 console.log(add);
-
+let todoList = document.querySelector(".todoList");
 add.addEventListener("click", () => {
     console.log("button clicked");
     list.push({
         text: taskInput.value,
     });
+    
+    let todo = document.createElement("li");
+    todo.textContent = taskInput.value;
+    todoList.appendChild(todo);
+
     taskInput.value = "";
     console.log(list);
     for(let i=0; i<list.length; i++){
         console.log(list[i].text);
     }
 });
-
-console.log(list);
 
 let div1 = document.querySelector(".div1");
 console.log(div1);
