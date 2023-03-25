@@ -35,6 +35,7 @@ add.addEventListener("click", () => {
     list.push({
         text: taskInput.value,
     })
+    taskInput.value = "";
     console.log(list);
 });
 
