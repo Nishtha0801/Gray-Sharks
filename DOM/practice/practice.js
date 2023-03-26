@@ -29,7 +29,9 @@ console.log(taskInput);
 
 let add = document.getElementById("addTask");
 console.log(add);
+
 let todoList = document.querySelector(".todoList");
+
 add.addEventListener("click", () => {
     console.log("button clicked");
     list.push({
