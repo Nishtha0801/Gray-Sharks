@@ -9,6 +9,7 @@ form.addEventListener("submit", (e) => {
     let task = input.value;
 
     if(task === ''){
+        alert("Empty tasks cannot be added");
         return;
     }
 
@@ -42,7 +43,7 @@ form.addEventListener("submit", (e) => {
     todoActions.appendChild(deleteButton);
     todoActions.appendChild(editButton);
 
-    deleteButton.addEventListener("click", () =>{
+    deleteButton.addEventListener("click", () => {
         todoS.removeChild(todoDiv);
     });
 
@@ -59,6 +60,6 @@ form.addEventListener("submit", (e) => {
            
     });
 
-    input.value="";
+    input.value = "";
 
 });
