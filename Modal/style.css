@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: burlywood;
+    padding: 5%;
+}
+
+.buttonDiv{
+    height: 10%;
+    width: 100%;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modalDiv{
+    height: 80%;
+    width: 100%;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    height: 200px;
+    width: 500px;
+    background-color: rgba(255, 255, 0, 0.367);
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.close{
+    height: 20px;
+    width: 50px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
