@@ -10,8 +10,6 @@ console.log(close);
 open.addEventListener("click", ()=>{
     console.log("button clicked");
     content.style.display = "flex";
-
-
 });
 
 close.addEventListener("click", () => {
