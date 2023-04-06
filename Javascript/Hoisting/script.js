@@ -37,11 +37,28 @@
 
 // arrow functions
 
-let numberOne = 5;
-let numberTwo = 6;
+// let numberOne = 5;
+// let numberTwo = 6;
 
-let ans = add(numberOne, numberTwo);
-console.log(ans);
+// let ans = add(numberOne, numberTwo);
+// console.log(ans);
 
-let add = (a,b) => a+b;
+// let add = (a,b) => a+b;
+
+
+// temporal dead zone
+
+//..
+//....
+// console.log(hello); //error
+// ......
+let hello = "Heyy, how are you doing?";//TDZ ends here
+console.log(hello); 
+//TDZ exist ni krta
+
+
+// TDZ started
+console.log(newVariable);  //error
+let newVariable = "heyy, i am a new variable!"; //TDz ends here
+
 
