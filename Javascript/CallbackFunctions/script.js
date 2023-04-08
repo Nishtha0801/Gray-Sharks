@@ -39,20 +39,36 @@
 
 //anonymous functions
 
-function filter(arr, callback){
-    let ans = [];
-    for(let i=0;i < arr.length; i++){
-        if(callback(arr[i])){
-            ans.push(arr[i]);
-        }
-    }
-    return ans;
+// function filter(arr, callback){
+//     let ans = [];
+//     for(let i=0;i < arr.length; i++){
+//         if(callback(arr[i])){
+//             ans.push(arr[i]);
+//         }
+//     }
+//     return ans;
+// }
+//  let arr = [1,3,5,6,8,10,12,14,16,7,9];
+
+//  let oddNumbers = filter(arr, function(number){
+//     return number%2 != 0;
+//  });
+
+//  console.log(oddNumbers);
+
+
+function add(a,b){
+    return a+b;
 }
- let arr = [1,3,5,6,8,10,12,14,16,7,9];
 
- let oddNumbers = filter(arr, function(number){
-    return number%2 != 0;
- });
+console.log(add(2,4)); //6
 
- console.log(oddNumbers);
+// impure functions
 
+let a = 11;
+
+function addImpure(b){
+    return a+b;
+}
+
+console.log(addImpure(9));
