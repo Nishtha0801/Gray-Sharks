@@ -39,29 +39,31 @@
 // console.log(promise);
 // promise.then(onFulfilled, onRejection);
 
-let func = () => {
-    console.log("You have to call me, whether your promise is resolved or rejected");
-}
+// .finally() ===============================================
 
-function add(a,b){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if(a === undefined || b === undefined){
-                reject('Please give all the required parameters')
-            } else {
-                resolve(a+b);
-            }
-        }, 1000);
-    });
-}
+// let func = () => {
+//     console.log("You have to call me, whether your promise is resolved or rejected");
+// }
+
+// function add(a,b){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if(a === undefined || b === undefined){
+//                 reject('Please give all the required parameters')
+//             } else {
+//                 resolve(a+b);
+//             }
+//         }, 1000);
+//     });
+// }
 
 
-let promise = add(5,7);
-promise.then(value => console.log(value))
-.catch((error) => console.log(error))
-.finally(() => {
-    func();
-});
+// let promise = add(5,7);
+// promise.then(value => console.log(value))
+// .catch((error) => console.log(error))
+// .finally(() => {
+//     func();
+// });
 
 
 // promise.catch(onRejected);
@@ -69,5 +71,95 @@ promise.then(value => console.log(value))
 // promise.catch((error) => {
 //     console.log(error);
 // })
+
+
+// Promise.all() ===========================================
+// const promise1 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve(3);
+//     }, 3000);
+// });
+
+// const promise2 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve(4);
+//     }, 2000);
+// });
+
+
+// function onRejected(){
+//     console.log("My Promise.all has been failed")
+// }
+// Promise.all([promise1, promise2]).then((res) => {
+//     console.log(res);
+//     console.log(res[0]);
+//     console.log(res[1]);
+// }).catch(onRejected);
+
+
+// Promise.resolve , Promise.reject =================
+
+// const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve(6);
+//     }, 3000);
+// });
+
+// promise.then(res => {
+//     return res === 3 ? Promise.resolve('I am 3') : Promise.reject('I am rejected')
+// }).then((res) => {
+//     console.log(res);
+// }).catch((error) => {
+//     console.log(error);
+// });
+
+
+// Promise.race ========================================
+// const promise1 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve(3);
+//     }, 3000);
+// });
+
+// const promise2 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve(4);
+//     }, 2000);
+// });
+
+
+// function onRejected(){
+//     console.log("My Promise.all has been failed")
+// }
+// Promise.race([promise1, promise2]).then((res) => {
+//     console.log(res);
+// }).catch(onRejected);
+
+// Promise.allSettled()====================================================
+
+const promise1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve(3);
+    }, 3000);
+});
+
+const promise2 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        reject(4);
+    }, 2000);
+});
+
+
+function onRejected(){
+    console.log("My Promise.all has been failed")
+}
+
+function onFulfilled(){
+    console.log("Fullfilled all the promises");
+}
+
+Promise.allSettled([promise1, promise2]).then((res) => {
+    console.log(res);
+}).then(onFulfilled);
 
 
