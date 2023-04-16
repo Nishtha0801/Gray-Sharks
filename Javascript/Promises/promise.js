@@ -137,29 +137,52 @@
 
 // Promise.allSettled()====================================================
 
-const promise1 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve(3);
-    }, 3000);
+// const promise1 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve(3);
+//     }, 3000);
+// });
+
+// const promise2 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         reject(4);
+//     }, 2000);
+// });
+
+
+// function onRejected(){
+//     console.log("My Promise.all has been failed")
+// }
+
+// function onFulfilled(){
+//     console.log("Fullfilled all the promises");
+// }
+
+// Promise.allSettled([promise1, promise2]).then((res) => {
+//     console.log(res);
+// }).then(onFulfilled);
+
+
+// Promise Chaining ===============================================
+const cart = ['shoes', 'pants', 'shirts', 'whtever'];
+
+createOrder(cart)
+.then(function(orderID){
+    console.log(orderID);
+    return orderID;
+}).catch(function (err){
+    console.log(err.message);
+}).then(function(orderID){
+    return proceedToPayment(orderID);
+}).then(function(paymentInfo){
+    console.log(paymentInfo);
+}).catch(function(err){
+    console.log(err.message);
+}).then(function(orderId){
+    console.log("I am going to be invoked for sure");
 });
 
-const promise2 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        reject(4);
-    }, 2000);
-});
+// explicit error handling
 
 
-function onRejected(){
-    console.log("My Promise.all has been failed")
-}
-
-function onFulfilled(){
-    console.log("Fullfilled all the promises");
-}
-
-Promise.allSettled([promise1, promise2]).then((res) => {
-    console.log(res);
-}).then(onFulfilled);
-
-
+// async/await
