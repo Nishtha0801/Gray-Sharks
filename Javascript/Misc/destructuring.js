@@ -9,10 +9,10 @@ let person = {
 
 
 
-let {firstName: fname, lastName: lname} = person;
+let {fName: firstName, lname:lastName} = person;
 console.log(firstName);
 
 // Array destructuring
-let [first, second, third] = ['Nishtha', 'Goyal', 'dysuvfuyw'];
+let [first, , third] = ['Nishtha', 'Goyal', 'dysuvfuyw'];
 console.log(first);
 
