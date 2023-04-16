@@ -30,7 +30,6 @@ function getJobCost(jobs){
     })
 }
 
-
 async function getJobsCost(){
     // The code in the try block is executed first, and if it throws an exception, 
     // the code in the catch block will be executed.
@@ -47,3 +46,10 @@ async function getJobsCost(){
 }
 
 getJobsCost();
+
+async function example(){
+    return await Promise.resolve("Hiiiiii");
+}
+
+let result = example();
+result.then((result) => console.log(result));
