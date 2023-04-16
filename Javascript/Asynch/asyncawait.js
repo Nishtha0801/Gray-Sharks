@@ -21,22 +21,28 @@ function getJobs(data){
     });
 }
 
-// hr ek job ka => cost kitna h
-
-async function getJobCost(jobs){
+function getJobCost(jobs){
     return new Promise((resolve, reject) => {
         console.log(`jobs are ${jobs}`);
         setTimeout(() => {
-            resolve(5000);
+            reject("Rejected");
         }, 2000);
     })
 }
 
+
 async function getJobsCost(){
-    let data = await getData(20089);
-    let jobs = await getJobs(data);
-    let cost = await getJobCost(jobs);
-    console.log(`cost is ${cost}`);
+    // The code in the try block is executed first, and if it throws an exception, 
+    // the code in the catch block will be executed.
+    try{
+        let data = await getData(20089);
+        let jobs = await getJobs(data);
+        let cost = await getJobCost(jobs);
+        console.log(`cost is ${cost}`);
+    }
+    catch {
+        console.log("Not possible")
+    }
     
 }
 
