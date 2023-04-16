@@ -71,4 +71,4 @@ console.log(person2.address.city);
 
 // Array.concat, Array.from(), Object.assign() => shallow copy
 // ... => deep copy when there is no nesting
-// JSON.parse(JSON.stringify(person1))
+// JSON.parse(JSON.stringify(person1)) => for deep copy
